@@ -10,16 +10,27 @@ public class PlayerTester {
         
         Player numberOne = new CyborgCharacter();
         System.out.println(numberOne.getTypeOfCharacter()
-                +  "\n your health points: " + numberOne.getHealthPoints()
-                +  "\n your damage points: " + numberOne.getWeaponDamagePoints() 
-                +  "\n your armour points: " + numberOne.getArmourPoints());
-        numberOne = new PickUpHealthPotion(numberOne);
-        numberOne = new PickUpArmour(numberOne);
-        numberOne = new PickUpWeapon(numberOne);
+                + "\n your health points: " + numberOne.getHealthPoints()
+                + "\n your damage points: " + numberOne.getWeaponDamagePoints() 
+                + "\n your armour points: " + numberOne.getArmourPoints()
+                + "\n your weight is: " + numberOne.getWeightOfPlayer());
+                
+        
+        numberOne = new PickUpHealth01(numberOne);
+        numberOne = new PickUpArmour01(numberOne);
+        numberOne = new PickUpWeapon01(numberOne);
+        numberOne = new PickUpHealth02(numberOne);
+        numberOne = new PickUpArmour02(numberOne);
+        numberOne = new PickUpWeapon02(numberOne);
+        
         System.out.println(numberOne.getTypeOfCharacter() 
-                +  "\n your health points: " + numberOne.getHealthPoints()
-                +  "\n your damage points: " + numberOne.getWeaponDamagePoints() 
-                +  "\n your armour points: " + numberOne.getArmourPoints());
+                + "\n your health points: " + numberOne.getHealthPoints()
+                + "\n your damage points: " + numberOne.getWeaponDamagePoints() 
+                + "\n your armour points: " + numberOne.getArmourPoints()
+                + "\n your weight is: " + numberOne.getWeightOfPlayer());
+        
+        
+        
         
     }
 

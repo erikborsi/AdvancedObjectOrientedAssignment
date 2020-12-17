@@ -28,4 +28,9 @@ public class AlienCharacter extends Player {
 
     }
 
+    @Override
+    public double getWeightOfPlayer() {
+        return 100;
+    }
+
 }

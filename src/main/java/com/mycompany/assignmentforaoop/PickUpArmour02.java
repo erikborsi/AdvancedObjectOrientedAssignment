@@ -2,13 +2,18 @@ package com.mycompany.assignmentforaoop;
 
 /**
  *
- * @author Erik Borsi
+ * @author Erik Borsi 
+ * Pick up armour type one from the locker from locker room
+ * Giving different points 
+ * Damage point minus as the armour is heavy so its isharder to move and attack 
+ * Armour points to maximum 
+ * NAME OF OBJECT TO PICK: UNDER CONSTRUCTION
  */
-public class PickUpArmour extends PlayerDecorator {
+public class PickUpArmour02 extends PlayerDecorator {
 
     Player player;
 
-    public PickUpArmour(Player player) {
+    public PickUpArmour02(Player player) {
         this.player = player;
     }
 
@@ -34,6 +39,11 @@ public class PickUpArmour extends PlayerDecorator {
     public double getArmourPoints() {
         return 100 + player.getArmourPoints();
 
+    }
+
+    @Override
+    public double getWeightOfPlayer() {
+        return 100 + player.getWeightOfPlayer();
     }
 
 }

@@ -28,4 +28,9 @@ public class CyborgCharacter extends Player {
 
     }
 
+    @Override
+    public double getWeightOfPlayer() {
+        return 100;
+    }
+
 }

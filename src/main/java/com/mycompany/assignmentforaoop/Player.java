@@ -18,6 +18,8 @@ public abstract class Player {
 
     public abstract double getArmourPoints();
     
+    public abstract double getWeightOfPlayer();
+    
     
 
 }

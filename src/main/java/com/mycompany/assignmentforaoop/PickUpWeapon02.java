@@ -4,11 +4,11 @@ package com.mycompany.assignmentforaoop;
  *
  * @author Erik Borsi
  */
-public class PickUpWeapon extends PlayerDecorator {
+public class PickUpWeapon02 extends PlayerDecorator {
 
     Player player;
 
-    public PickUpWeapon(Player player) {
+    public PickUpWeapon02(Player player) {
         this.player = player;
     }
 
@@ -34,5 +34,10 @@ public class PickUpWeapon extends PlayerDecorator {
     public double getArmourPoints() {
         return 0 + player.getArmourPoints();
 
+    }
+
+    @Override
+    public double getWeightOfPlayer() {
+        return 0 + player.getWeightOfPlayer();  
     }
 }
