@@ -5,7 +5,7 @@ package com.mycompany.assignmentforaoop;
  * @author Erik Borsi 
  * Pick up armour type one from the locker from locker room
  * Giving different points 
- * Damage point minus as the armour is heavy so its isharder to move and attack 
+ * Damage point minus as the armour is heavy so its is harder to move and attack 
  * Armour points to maximum 
  * NAME OF OBJECT TO PICK: UNDER CONSTRUCTION
  */

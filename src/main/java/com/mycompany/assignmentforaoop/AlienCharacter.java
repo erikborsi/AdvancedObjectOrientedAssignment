@@ -8,6 +8,11 @@ public class AlienCharacter extends Player {
 
     public AlienCharacter() {
         typeOfCharacter = "You are an alien named:" + " nameInputFromUser,";
+        moveBehaviour = new Moving();
+        attackBehaviour = new Attacking();
+        bribeBehaviour = new Bribing();
+        dodgeBehaviour = new Dodging();
+
     }
 
     @Override

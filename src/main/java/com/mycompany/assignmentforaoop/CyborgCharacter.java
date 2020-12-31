@@ -8,6 +8,10 @@ public class CyborgCharacter extends Player {
 
     public CyborgCharacter() {
         typeOfCharacter = "You are a cyborg named:" + " nameInputFromUser,";
+        moveBehaviour = new Moving();
+        attackBehaviour = new Attacking();
+        bribeBehaviour = new Bribing();
+        dodgeBehaviour = new Dodging();
     }
 
     @Override

@@ -8,6 +8,10 @@ public class AndroidCharacter extends Player {
 
     public AndroidCharacter() {
         typeOfCharacter = "You are an android named:" + " nameInputFromUser,";
+        moveBehaviour = new Moving();
+        attackBehaviour = new Attacking();
+        bribeBehaviour = new Bribing();
+        dodgeBehaviour = new Dodging();
     }
 
     @Override
