@@ -150,6 +150,63 @@ public class PlayerDecoratorAndStrategyTester {
 //        System.out.println("health points: " + android.getHealthPoints());
 //        System.out.println("health points: " + cyborg.getHealthPoints());
 //        System.out.println("health points: " + human.getHealthPoints());
+//
+//
+        Player alien = new CharacterAlien();
+        System.out.println(alien.getTypeOfCharacter());
+        alien.setBehaviourAttack(new ActionAttack());
+        alien.performAttack();
+
+        alien.setBehaviourAttack(new ActionNoAttack());
+        alien.performAttack();
+
+        alien = new DecorArmourLight(alien);
+        alien.setBehaviourAttack(new ActionAttack());
+        alien.performAttack();
+
+        System.out.println(" ");
+
+        Player android = new CharacterAndroid();
+        System.out.println(android.getTypeOfCharacter());
+        android.setBehaviourAttack(new ActionAttack());
+        android.performAttack();
+
+        android.setBehaviourAttack(new ActionNoAttack());
+        android.performAttack();
+
+        android = new DecorArmourLight(android);
+        android.setBehaviourAttack(new ActionAttack());
+        android.performAttack();
+
+        System.out.println(" ");
+
+        Player cyborg = new CharacterCyborg();
+        System.out.println(cyborg.getTypeOfCharacter());
+        cyborg.setBehaviourAttack(new ActionAttack());
+        cyborg.performAttack();
+
+        cyborg.setBehaviourAttack(new ActionNoAttack());
+        cyborg.performAttack();
+
+        cyborg = new DecorArmourLight(cyborg);
+        cyborg.setBehaviourAttack(new ActionAttack());
+        cyborg.performAttack();
+
+        System.out.println(" ");
+
+        Player human = new CharacterHuman();
+        System.out.println(human.getTypeOfCharacter());
+        human.setBehaviourAttack(new ActionAttack());
+        human.performAttack();
+
+        human.setBehaviourAttack(new ActionNoAttack());
+        human.performAttack();
+
+        human = new DecorArmourLight(human);
+        human.setBehaviourAttack(new ActionAttack());
+        human.performAttack();
+
+        System.out.println(" ");
     }
 
 }
