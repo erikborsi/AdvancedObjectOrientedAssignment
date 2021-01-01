@@ -2,10 +2,11 @@ package com.mycompany.assignmentforaoop;
 
 /**
  *
- * @author Erik Borsi
- * Pick up weapon type one from the "PLACE IT HAS BEEN FOUND - UNDER CONSTRUCITON"
- * Giving different damage points
- * 
+ * @author Erik Borsi, Pick up weapon type one from the "PLACE IT HAS BEEN FOUND
+ * - UNDER CONSTRUCITON" Giving different damage points
+ *
+ * CHANGED - weapon should be chosen at the beginning of the game and the player
+ * will stick with it until the game ends, WEAPON MIGHT BE CHANGABLE
  */
 public class DecorWeaponLightSaber extends PlayerDecorator {
 
@@ -41,6 +42,6 @@ public class DecorWeaponLightSaber extends PlayerDecorator {
 
     @Override
     public double getWeightOfPlayer() {
-        return player.getWeightOfPlayer() + 5;    
+        return player.getWeightOfPlayer() + 5;
     }
 }

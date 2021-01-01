@@ -9,6 +9,11 @@ package com.mycompany.assignmentforaoop;
  * AND BEER STORE THE STUFF IN A BAG ENERGY POINTS - EAT THE PIZZA FROM THE BAG
  * PLAYER CAN DIE IF HEALTH OR ENERGY IS LOW HUD ON THE SCREEN TO SEE THE PLAYER
  * STATS
+ * 
+ * Take stuff from the fridge, food and drink, gives health back, 
+ * ??? player can die ??? if health is too low, 
+ * or weight is too much, so collecting stuff will kill the player
+ * !!!player stats displayed!!!
  *
  */
 public abstract class Player {

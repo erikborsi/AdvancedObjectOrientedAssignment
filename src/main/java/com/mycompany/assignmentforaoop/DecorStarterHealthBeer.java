@@ -2,12 +2,14 @@ package com.mycompany.assignmentforaoop;
 
 /**
  *
- * @author Erik Borsi
- * Pick up health type one from the fridge from canteen
- * Giving different points 
- * Damage point plus as the health is on the maximum
- * NAME OF OBJECT TO PICK: PIZZA
- * Damage point plus as pizza is food and food is healthy
+ * @author Erik Borsi, Pick up health type one from the fridge from canteen,
+ * Giving different points, Damage point plus as the health is on the maximum,
+ * NAME OF OBJECT TO PICK: PIZZA Damage point plus as pizza is food and food is
+ * healthy
+ *
+ * CHANGED - Before the game starts the player need to decide what to drink
+ * before going on the mission/dispatched. Smoothie is healthy now!!! instead of
+ * pizza
  */
 public class DecorStarterHealthBeer extends PlayerDecorator {
 
@@ -20,25 +22,25 @@ public class DecorStarterHealthBeer extends PlayerDecorator {
     @Override
     public String getTypeOfCharacter() {
         return player.getTypeOfCharacter() + " drinked a beer,";
-        
+
     }
 
     @Override
     public double getHealthPoints() {
         return player.getHealthPoints() + 10;
-        
+
     }
 
     @Override
     public double getWeaponDamagePoints() {
         return player.getWeaponDamagePoints() - 5;
-        
+
     }
 
     @Override
     public double getArmourPoints() {
         return player.getArmourPoints();
-        
+
     }
 
     @Override

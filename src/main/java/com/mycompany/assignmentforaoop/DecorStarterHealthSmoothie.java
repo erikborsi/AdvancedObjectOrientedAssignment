@@ -2,12 +2,14 @@ package com.mycompany.assignmentforaoop;
 
 /**
  *
- * @author Erik Borsi 
- * Pick up health type one from the fridge from canteen
- * Giving different points 
- * Damage point plus as the health is on the maximum
- * NAME OF OBJECT TO PICK: BEER 
- * Damage point minus as drinking beer is not healthy (TRAP)
+ * @author Erik Borsi, Pick up health type one from the fridge from canteen,
+ * Giving different points, Damage point plus as the health is on the maximum,
+ * NAME OF OBJECT TO PICK: BEER Damage point minus as drinking beer is not
+ * healthy (TRAP)
+ *
+ * CHANGED - Before the game starts the player need to decide what to drink
+ * before going on the mission/dispatched. Smoothie is healthy now!!! instead of
+ * pizza
  */
 public class DecorStarterHealthSmoothie extends PlayerDecorator {
 

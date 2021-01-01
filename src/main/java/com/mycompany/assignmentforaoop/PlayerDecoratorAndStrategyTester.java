@@ -73,76 +73,76 @@ public class PlayerDecoratorAndStrategyTester {
 //        System.out.println("Points after attack performed: " + numberOne.getArmourPoints());
 //        
 //        numberOne.performAttack();
-        Player playerName = new CharacterAlien();
-
-        System.out.println("type of character: " + playerName.getTypeOfCharacter());
-        System.out.println("health points: " + playerName.getHealthPoints());
-        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
-        System.out.println("armour points: " + playerName.getArmourPoints());
-        System.out.println("weight points: " + playerName.getWeightOfPlayer());
-
-        playerName = new DecorArmourHeavy(playerName);
-        playerName = new DecorStarterHealthBeer(playerName);
-        playerName = new DecorWeaponLaserGun(playerName);
-
-        System.out.println(" ");
-        System.out.println("type of character: " + playerName.getTypeOfCharacter());
-        System.out.println("health points: " + playerName.getHealthPoints());
-        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
-        System.out.println("armour points: " + playerName.getArmourPoints());
-        System.out.println("weight points: " + playerName.getWeightOfPlayer());
-
-        playerName.setBehaviourMove(new ActionMove());
-        playerName.setBehaviourAttack(new ActionAttack());
-        playerName.setBehaviourBribe(new ActionBribe());
-        playerName.setBehaviourDodge(new ActionDodge());
-
-        System.out.println(" ");
-        playerName.performMove();
-        playerName.performAttack();
-        playerName.performBribe();
-        playerName.performDodge();
-
-        System.out.println(" ");
-        playerName.performMove();
-        playerName.performAttack();
-        playerName.performBribe();
-        playerName.performDodge();
-
-        playerName = new DecorArmourLight(playerName);
-        playerName = new DecorStarterHealthSmoothie(playerName);
-        playerName = new DecorWeaponLightSaber(playerName);
-
-        System.out.println(" ");
-        System.out.println("type of character: " + playerName.getTypeOfCharacter());
-        System.out.println("health points: " + playerName.getHealthPoints());
-        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
-        System.out.println("armour points: " + playerName.getArmourPoints());
-        System.out.println("weight points: " + playerName.getWeightOfPlayer());
-
-        playerName.setBehaviourMove(new ActionMove());
-        playerName.setBehaviourAttack(new ActionAttack());
-        playerName.setBehaviourBribe(new ActionBribe());
-        playerName.setBehaviourDodge(new ActionDodge());
-
-        System.out.println(" ");
-        playerName.performMove();
-        playerName.performAttack();
-        playerName.performBribe();
-        playerName.performDodge();
-
-        System.out.println(" ");
-        playerName.performMove();
-        playerName.performAttack();
-        playerName.performBribe();
-        playerName.performDodge();
-
-        System.out.println(" ");
-        System.out.println("type of character: " + playerName.getTypeOfCharacter());
-        System.out.println("health points: " + playerName.getHealthPoints());
-        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
-        System.out.println("armour points: " + playerName.getArmourPoints());
-        System.out.println("weight points: " + playerName.getWeightOfPlayer());
+//        Player playerName = new CharacterAlien();
+//
+//        System.out.println("type of character: " + playerName.getTypeOfCharacter());
+//        System.out.println("health points: " + playerName.getHealthPoints());
+//        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
+//        System.out.println("armour points: " + playerName.getArmourPoints());
+//        System.out.println("weight points: " + playerName.getWeightOfPlayer());
+//
+//        playerName = new DecorArmourHeavy(playerName);
+//        playerName = new DecorStarterHealthBeer(playerName);
+//        playerName = new DecorWeaponLaserGun(playerName);
+//
+//        System.out.println(" ");
+//        System.out.println("type of character: " + playerName.getTypeOfCharacter());
+//        System.out.println("health points: " + playerName.getHealthPoints());
+//        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
+//        System.out.println("armour points: " + playerName.getArmourPoints());
+//        System.out.println("weight points: " + playerName.getWeightOfPlayer());
+//
+//        playerName.setBehaviourMove(new ActionMove());
+//        playerName.setBehaviourAttack(new ActionAttack());
+//        playerName.setBehaviourBribe(new ActionNoBribe());
+//        playerName.setBehaviourDodge(new ActionDodge());
+//
+//        System.out.println(" ");
+//        playerName.performMove();
+//        playerName.performAttack();
+//        playerName.performBribe();
+//        playerName.performDodge();
+//
+//        System.out.println(" ");
+//        playerName.performMove();
+//        playerName.performAttack();
+//        playerName.performBribe();
+//        playerName.performDodge();
+//
+//        playerName = new DecorArmourLight(playerName);
+//        playerName = new DecorStarterHealthSmoothie(playerName);
+//        playerName = new DecorWeaponLightSaber(playerName);
+//
+//        System.out.println(" ");
+//        System.out.println("type of character: " + playerName.getTypeOfCharacter());
+//        System.out.println("health points: " + playerName.getHealthPoints());
+//        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
+//        System.out.println("armour points: " + playerName.getArmourPoints());
+//        System.out.println("weight points: " + playerName.getWeightOfPlayer());
+//
+//        playerName.setBehaviourMove(new ActionMove());
+//        playerName.setBehaviourAttack(new ActionAttack());
+//        playerName.setBehaviourBribe(new ActionBribe());
+//        playerName.setBehaviourDodge(new ActionDodge());
+//
+//        System.out.println(" ");
+//        playerName.performMove();
+//        playerName.performAttack();
+//        playerName.performBribe();
+//        playerName.performDodge();
+//
+//        System.out.println(" ");
+//        playerName.performMove();
+//        playerName.performAttack();
+//        playerName.performBribe();
+//        playerName.performDodge();
+//
+//        System.out.println(" ");
+//        System.out.println("type of character: " + playerName.getTypeOfCharacter());
+//        System.out.println("health points: " + playerName.getHealthPoints());
+//        System.out.println("damage points: " + playerName.getWeaponDamagePoints());
+//        System.out.println("armour points: " + playerName.getArmourPoints());
+//        System.out.println("weight points: " + playerName.getWeightOfPlayer());
 //
 //        Player android = new AndroidCharacter();
 //        Player cyborg = new CyborgCharacter();
