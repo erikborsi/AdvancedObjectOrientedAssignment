@@ -13,10 +13,10 @@ package com.mycompany.assignmentforaoop;
  */
 public abstract class Player {
 
-    MoveBehaviour moveBehaviour;
-    AttackBehaviour attackBehaviour;
-    BribeBehaviour bribeBehaviour;
-    DodgeBehaviour dodgeBehaviour;
+    BehaviourMove behaviourMove;
+    BehaviourAttack behaviourAttack;
+    BehaviourBribe behaviourBribe;
+    BehaviourDodge behaviourDodge;
 
     String typeOfCharacter = "Unknown";
 
@@ -24,36 +24,36 @@ public abstract class Player {
 
     }
 
-    public void setMoveBehaviour(MoveBehaviour mB) {
-        this.moveBehaviour = mB;
+    public void setBehaviourMove(BehaviourMove bM) {
+        this.behaviourMove = bM;
     }
 
-    public void setAttackBehaviour(AttackBehaviour aB) {
-        this.attackBehaviour = aB;
+    public void setBehaviourAttack(BehaviourAttack bA) {
+        this.behaviourAttack = bA;
     }
 
-    public void setBribeBehaviour(BribeBehaviour bB) {
-        this.bribeBehaviour = bB;
+    public void setBehaviourBribe(BehaviourBribe bB) {
+        this.behaviourBribe = bB;
     }
 
-    public void setDodgeBehaviour(DodgeBehaviour dB) {
-        this.dodgeBehaviour = dB;
+    public void setBehaviourDodge(BehaviourDodge bD) {
+        this.behaviourDodge= bD;
     }
 
     public void performMove() {
-        moveBehaviour.move();
+        behaviourMove.move();
     }
 
     public void performAttack() {
-        attackBehaviour.attack();
+        behaviourAttack.attack();
     }
 
     public void performBribe() {
-        bribeBehaviour.bribe();
+        behaviourBribe.bribe();
     }
 
     public void performDodge() {
-        dodgeBehaviour.dodge();
+        behaviourDodge.dodge();
     }
 
     public String getTypeOfCharacter() {
