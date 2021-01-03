@@ -4,11 +4,13 @@ package assignmentForAOOP_Rooms;
  *
  * @author Erik Borsi
  */
-public abstract class RoomsOnSpaceStation {
+public abstract interface RoomsOnSpaceStation {
 
-    public RoomsOnSpaceStation() {
-        
-    }
+//    public RoomsOnSpaceStation() {
+//        
+//    }
+    
+    public void storyOfTheRoom();
 
     
 
