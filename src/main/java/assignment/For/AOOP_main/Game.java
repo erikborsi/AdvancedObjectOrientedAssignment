@@ -26,7 +26,7 @@ public class Game {
 
     }
 
-    public void printMainMenu() {
+    private void printMainMenu() {
         System.out.println("\n---------------------------");
         System.out.println("         Game Menu         ");
         System.out.println("---------------------------");
@@ -36,7 +36,7 @@ public class Game {
         System.out.println("3. Exit");
     }
 
-    public void startMenu() {
+    private void startMenu() {
         printMainMenu();
         Scanner sc = new Scanner(System.in);
         int startMenuOptions = 0;
@@ -64,8 +64,8 @@ public class Game {
         }
     }
 
-    public void printCharacterOptions() {
-        System.out.println("\n---------------------------");
+    private void printCharacterOptions() {
+        System.out.println("\n\n---------------------------");
         System.out.println("    Character options:     ");
         System.out.println("---------------------------");
         System.out.println("    Select from below:     ");
@@ -76,7 +76,7 @@ public class Game {
         System.out.println("5. Main Menu");
     }
 
-    public void createAlienPlayer() {
+    private void createAlienPlayer() {
         Player alien = new CharacterAlien();
         alien = new DecorArmourLight(alien);
         alien = new DecorWeaponLaserGun(alien);
@@ -86,7 +86,7 @@ public class Game {
         this.alien = alien;
     }
 
-    public void createAndroidPlayer() {
+    private void createAndroidPlayer() {
         Player android = new CharacterAndroid();
         android = new DecorArmourHeavy(android);
         android = new DecorWeaponLaserGun(android);
@@ -96,7 +96,7 @@ public class Game {
         this.android = android;
     }
 
-    public void createCyborgPlayer() {
+    private void createCyborgPlayer() {
         Player cyborg = new CharacterCyborg();
         cyborg = new DecorArmourHeavy(cyborg);
         cyborg = new DecorWeaponLaserGun(cyborg);
@@ -106,7 +106,7 @@ public class Game {
         this.cyborg = cyborg;
     }
 
-    public void createHumanPlayer() {
+    private void createHumanPlayer() {
         Player human = new CharacterHuman();
         human = new DecorArmourLight(human);
         human = new DecorWeaponLightSaber(human);
@@ -118,7 +118,7 @@ public class Game {
         this.human = human;
     }
 
-    public void chooseCharacter() {
+    private void chooseCharacter() {
         printCharacterOptions();
         Scanner sc = new Scanner(System.in);
         int chooseCharacterOption = 0;
@@ -156,7 +156,7 @@ public class Game {
         }
     }
 
-    public void runGame() {
+    private void runGame() {
         printOptionsForRunGame();
         Scanner sc = new Scanner(System.in);
         int runGameInput = 0;
@@ -197,7 +197,7 @@ public class Game {
     }
 
     private void printOptionsForRunGame() {
-        System.out.println("\n---------------------------");
+        System.out.println("\n\n---------------------------");
         System.out.println("  PLACES ON THE SPACESHIP:  ");
         System.out.println("---------------------------");
         System.out.println("    Select from below:     ");
@@ -210,8 +210,8 @@ public class Game {
         System.out.println("7. Main Menu");
     }
 
-    public void runReadMe() {
-        System.out.println("\n---------------------------");
+    private void runReadMe() {
+        System.out.println("\n\n---------------------------");
         System.out.println("    STORY/HOW TO PLAY:     ");
         System.out.println("---------------------------");
         System.out.println("TEXT GOES HERE FOR PLAYER");
@@ -236,7 +236,7 @@ public class Game {
         }
     }
 
-    public void createEasyEnemy() {
+    private void createEasyEnemy() {
         Enemy easyEnemy = new CharacterEnemyEasy();
         easyEnemy = new DecorArmourForEasyEnemy(easyEnemy);
         easyEnemy = new DecorStarterHealthForEasyEnemy(easyEnemy);
@@ -247,7 +247,7 @@ public class Game {
         this.easyEnemy = easyEnemy;
     }
 
-    public void createMediumEnemy() {
+    private void createMediumEnemy() {
         Enemy mediumEnemy = new CharacterEnemyMedium();
         mediumEnemy = new DecorArmourForMediumEnemy(mediumEnemy);
         mediumEnemy = new DecorStarterHealthForMediumEnemy(mediumEnemy);
@@ -258,7 +258,7 @@ public class Game {
         this.mediumEnemy = mediumEnemy;
     }
 
-    public void createHardEnemy() {
+    private void createHardEnemy() {
         Enemy hardEnemy = new CharacterEnemyHard();
         hardEnemy = new DecorArmourForHardEnemy(hardEnemy);
         hardEnemy = new DecorStarterHealthForHardEnemy(hardEnemy);
@@ -269,8 +269,8 @@ public class Game {
         this.hardEnemy = hardEnemy;
     }
 
-    public void mainCorridor() {
-        System.out.println("\n---------------------------");
+    private void mainCorridor() {
+        System.out.println("\n\n---------------------------");
         System.out.println("       MAIN CORRIDOR       ");
         System.out.println("---------------------------");
         System.out.println("STORY");
@@ -316,18 +316,18 @@ public class Game {
         }
     }
 
-    public void storyOfTheSleepingQuarters() {
-        System.out.println("\n---------------------------");
+    private void storyOfTheSleepingQuarters() {
+        System.out.println("\n\n---------------------------");
         System.out.println("     SLEEPING QUARTERS     ");
         System.out.println("---------------------------");
         System.out.println("STORY");
         System.out.println("    Select from below:     ");
-        System.out.println("1. Sleeping Quarters");
-        System.out.println("2. Locker Room");
-        System.out.println("3. Library");
-        System.out.println("4. Engline Room");
-        System.out.println("5. Dinner Hall");
-        System.out.println("6. Main Menu");
+        System.out.println("1. ACTION");
+        System.out.println("2. ACTION");
+        System.out.println("3. ACTION");
+        System.out.println("4. ACTION");
+        System.out.println("5. ACTION");
+        System.out.println("6. Main Corridor");
         createEasyEnemy();
         Scanner sc = new Scanner(System.in);
         int roomInput = 0;
@@ -336,7 +336,6 @@ public class Game {
             try {
                 roomInput = sc.nextInt();
             } catch (NumberFormatException e) {
-
             }
             switch (roomInput) {
                 case 1:
@@ -362,11 +361,10 @@ public class Game {
                     System.out.println("ERROR - WRONG SELECTION");
             }
         }
-
     }
 
-    public void storyOfTheLockerRoom() {
-        System.out.println("\n---------------------------");
+    private void storyOfTheLockerRoom() {
+        System.out.println("\n\n---------------------------");
         System.out.println("        LOCKER ROOM        ");
         System.out.println("---------------------------");
         System.out.println("STORY");
@@ -412,8 +410,8 @@ public class Game {
         }
     }
 
-    public void storyOfTheLibrary() {
-        System.out.println("\n---------------------------");
+    private void storyOfTheLibrary() {
+        System.out.println("\n\n---------------------------");
         System.out.println("          LIBRARY          ");
         System.out.println("---------------------------");
         System.out.println("STORY");
@@ -447,8 +445,8 @@ public class Game {
         }
     }
 
-    public void storyOfTheEngineRoom() {
-        System.out.println("\n---------------------------");
+    private void storyOfTheEngineRoom() {
+        System.out.println("\n\n---------------------------");
         System.out.println("        ENGINE ROOM        ");
         System.out.println("---------------------------");
         System.out.println("STORY");
@@ -467,7 +465,6 @@ public class Game {
             try {
                 roomInput = sc.nextInt();
             } catch (NumberFormatException e) {
-
             }
             switch (roomInput) {
                 case 1:
@@ -493,11 +490,10 @@ public class Game {
                     System.out.println("ERROR - WRONG SELECTION");
             }
         }
-
     }
 
-    public void storyOfTheDinnerHall() {
-        System.out.println("\n---------------------------");
+    private void storyOfTheDinnerHall() {
+        System.out.println("\n\n---------------------------");
         System.out.println("        DINNER HALL        ");
         System.out.println("---------------------------");
         System.out.println("STORY");
@@ -516,7 +512,6 @@ public class Game {
             try {
                 roomInput = sc.nextInt();
             } catch (NumberFormatException e) {
-
             }
             switch (roomInput) {
                 case 1:
@@ -542,7 +537,6 @@ public class Game {
                     System.out.println("ERROR - WRONG SELECTION");
             }
         }
-
     }
 
 }
